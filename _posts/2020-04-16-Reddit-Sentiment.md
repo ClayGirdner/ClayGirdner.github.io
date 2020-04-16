@@ -16,3 +16,5 @@ Python was used to gather the comments from each thread along with the PRAW libr
 In order to measure the overall sentiment for each thread, comments were fed through two different text analysis tools available in Python – VADER and TextBlob, both of which produce numeric scores indicating the degree of polarity for each comment (i.e. level of positivity/negativity). Two example comments and their resulting scores are provided below along with a scatter plot displaying the relationship between the two polarity scores for all 31,000+ comments in the data set (correlation = 0.51).
 
 (Note that all plots/calculations/analyses beyond this point will be done in R rather than Python.)
+
+![]({{site.baseurl}}/https://raw.githubusercontent.com/ClayGirdner/nfl_hires_reddit_sentiment/master/vader_textblob_scatter.png)
