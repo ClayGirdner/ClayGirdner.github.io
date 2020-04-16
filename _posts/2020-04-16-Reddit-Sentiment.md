@@ -1,6 +1,6 @@
 ---
-published: false
-title: null
+published: true
+title: 'Court of Public Opinion: A Sentiment Analysis'
 ---
 ## Reddit’s collective reaction to recent NFL head coaching hires
 
