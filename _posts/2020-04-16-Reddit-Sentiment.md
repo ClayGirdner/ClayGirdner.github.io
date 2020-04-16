@@ -21,6 +21,10 @@ In order to measure the overall sentiment for each thread, comments were fed thr
 - VADER: -0.32
 - TextBlob: -0.75
 
-![vader/textblob scatter](https://raw.githubusercontent.com/ClayGirdner/nfl_hires_reddit_sentiment/master/vader_textblob_scatter.png){:height="400" width="500"}
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ClayGirdner/nfl_hires_reddit_sentiment/master/vader_textblob_scatter.png" alt="vader/textblob scatter" width="450" height="450">
+</p>
+
+![vader/textblob scatter](https://raw.githubusercontent.com/ClayGirdner/nfl_hires_reddit_sentiment/master/vader_textblob_scatter.png){:height="450" width="450"}
 
 
