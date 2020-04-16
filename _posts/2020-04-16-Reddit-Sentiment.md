@@ -11,13 +11,13 @@ Fast forward to the present day. Freddie’s a goner, the Browns are once again 
 ### Data
 I needed data to conduct this experiment, so I turned to Reddit threads – specifically posts on the NFL subreddit, r/nfl, and team-specific subreddits (i.e. r/browns for Kitchens and Stefanski, r/NYGiants for Joe Judge, etc.) linking to a Tweet or team release announcing a new hiring going back to 2018 (19 hires and 38 threads).
 
-Python was used to gather the comments from each thread along with the PRAW library which allows users to tap into Reddit’s free API. See reddit_hire_data_pull.py and comments_data.csv in the repository for the code and data - https://github.com/ClayGirdner/nfl_hires_reddit_sentiment.
+Python was used to gather the comments from each thread along with the PRAW library which allows users to tap into Reddit’s free API. See reddit_hire_data_pull.py and comments_data.csv in the [repository](https://github.com/ClayGirdner/nfl_hires_reddit_sentiment) for the code and data.
 
-In order to measure the overall sentiment for each thread, comments were fed through two different text analysis tools available in Python – VADER and TextBlob, both of which produce numeric scores indicating the degree of polarity for each comment (i.e. level of positivity/negativity). Two example comments and their resulting scores are provided below along with a scatter plot displaying the relationship between the two polarity scores for all 31,000+ comments in the data set (correlation = 0.51).
+In order to measure the overall sentiment for each thread, comments were fed through two different text analysis tools available in Python – [VADER](https://github.com/cjhutto/vaderSentiment) and [TextBlob](https://textblob.readthedocs.io/en/dev/), both of which produce numeric scores indicating the degree of polarity for each comment (i.e. level of positivity/negativity). Two example comments and their resulting scores are provided below along with a scatter plot displaying the relationship between the two polarity scores for all 31,000+ comments in the data set (correlation = 0.51).
 
 (Note that all plots/calculations/analyses beyond this point will be done in R rather than Python.)
 
-![vader_textblob_scatter](https://raw.githubusercontent.com/ClayGirdner/nfl_hires_reddit_sentiment/master/vader_textblob_scatter.png)
+![vader/textblob scatter](https://raw.githubusercontent.com/ClayGirdner/nfl_hires_reddit_sentiment/master/vader_textblob_scatter.png)
 
 
 How does this look?
