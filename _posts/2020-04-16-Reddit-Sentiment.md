@@ -25,6 +25,51 @@ In order to measure the overall sentiment for each thread, comments were fed thr
   <img src="https://raw.githubusercontent.com/ClayGirdner/nfl_hires_reddit_sentiment/master/vader_textblob_scatter.png" alt="vader/textblob scatter" width="400" height="400">
 </p>
 
+We see that the polarity metrics have a tendency to concentrate around zero as both methods default to zero if the polarity cannot be detected. If we exclude these neutral observations (polarity = 0 in either method), the correlation improves to 0.54. Due to this quirk in the data, neutral comments will be excluded when calculating the polarity aggregates for each thread in the subsequent section. However, note that these neutral comments **are** included in the subjectivity section presented later as they provide context on the overall intensity of emotion within comment threads.
 
+### Polarity
+With these polarity metrics in hand, scores were averaged for each hire thread on r/nfl since 2018. Results of these averaged polarity scores are presented below.
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ClayGirdner/nfl_hires_reddit_sentiment/master/nfl_polarity.png" alt="polarity scatter" width="400" height="400">
+</p>
 
+In the plot we see that Kitchens scored near the middle of the pack in terms of VADER and TextBlob polarity while Stefanski just trailed in both variables. Surprisingly enough, Steve Wilks, the one-year coach of Arizona in 2018 scored the highest in both metrics, while Adam Gase scored last and next-to-last (unsurprisingly enough). However, if we look at comment counts and subjectivity metrics (intensity of emotion, in either direction), Wilks’s high polarity scores begin to lose some of their luster and the Kitchens-Stefanski divide becomes more pronounced.
+
+### Subjectivity and Comment Counts
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ClayGirdner/nfl_hires_reddit_sentiment/master/nfl_subjectivity_count.png" alt="subjectivity and count" height="400">
+</p>
+
+The Wilks thread was the smallest in terms of total comments (116) and one of the least subjective threads (at least according to TextBlob). I interpret this to mean that fans did not feel strongly about the hire and that his high polarity scores could be fluky due to the small sample size.
+
+We also see that the Stefanski r/nfl hire thread was among the most opinionated discussions in the entire experiment and well ahead of the Kitchens thread which scored low in both subjectivity metrics. This suggests that fans are much more divided and emotional when it comes to Stefanski with only 23% of the Stefanski comments being neutral (according to VADER) compared to 34% of comments in the Kitchens thread.
+
+### Subreddit Comparisons
+
+In addition to r/nfl, I also examined the hire threads within each team’s respective subreddit to compare the sentiment of team-specific fans to the general NFL fanbase within r/nfl. Here I compare VADER polarity scores between the two subreddit groups.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ClayGirdner/nfl_hires_reddit_sentiment/master/subreddit_comp.png" alt="subreddits" width="400" height="400">
+</p>
+
+As intuition would suggest, this analysis shows that team subreddits tend to be more optimistic about “their guy” than the generalists commenting on r/nfl. This is especially true regarding the r/browns thread for Kitchens which had a VADER polarity score well above its r/nfl counterpart, proving that I wasn’t the only Browns fan drinking the Kool-Aid. However, the same cannot be said for the Stefanski thread on r/browns with an average polarity nearly equal to r/nfl, suggesting that Browns fans are returning to their usual pessimistic demeanor. The last point to note from this plot is the r/nyjets reaction to the Adam Gase selection. Jets fans were not only more pessimistic than the community at large, but they generated the lowest VADER polarity score by a sizable margin. (Note that r/eagles was not represented in this analysis.)
+
+### Word Composition: Kitchens vs Stefanski
+
+Lastly, I broke out the Kitchens and Stefanski discussions in order to compare the word composition between the two sets of comments. Below are wordclouds showing some of the most frequently used words from the Kitchens (orange) and Stefanski (brown) threads.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ClayGirdner/nfl_hires_reddit_sentiment/master/kitchens_cloud.png" alt="Kitchens" width="400" height="400">
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ClayGirdner/nfl_hires_reddit_sentiment/master/stefanski_cloud.png" alt="Stefanski" width="400" height="400">
+</p>
+
+The word “baker” clearly sticks out when viewing the comment threads this way as it was heavily featured in the Kitchens discussion but barely mentioned in the Stefanski thread. In fact, Baker was mentioned nearly seven times more often when Freddie was hired! On the flip side, the word offense (or offensive) was mentioned more than twice as often in the Stefanski thread. I believe this is consistent with the narratives that Freddie was hired primarily due to his relationship with Mayfield and the other Browns players (word “players” 1.5x more often for Freddie) while Stefanski was hired for his ability to scheme up an offense and call plays.
+
+### Conclusion
+
+In summary, this analysis shows that my affection for Kitchens wasn’t completely outside the norm at the time of his hiring. However, it must also be noted that much of the Freddie love was concentrated within the Browns fanbase as Freddie’s polarity scores were roughly average within the r/nfl thread but sky high in the r/browns comments, supporting the idea that team subreddits are often echo-chambers. Who knows, perhaps this just goes to show that the consensus on Reddit may not be the most reliable predictor of future success (shocker, I know). And if that’s the case, it may be a good thing that the dummies on Reddit are talking negatively about my boy Stefanski! Oh boy, here I go getting my hopes up again…
