@@ -17,4 +17,4 @@ In order to measure the overall sentiment for each thread, comments were fed thr
 
 (Note that all plots/calculations/analyses beyond this point will be done in R rather than Python.)
 
-![]({{site.baseurl}}/https://i.imgur.com/wTjJvpb.jpeg)
+![hmmm](https://i.imgur.com/wTjJvpb.jpeg)
