@@ -16,6 +16,3 @@ In order to measure the overall sentiment for each thread, comments were fed thr
 (Note that all plots/calculations/analyses beyond this point will be done in R rather than Python.)
 
 ![vader/textblob scatter](https://raw.githubusercontent.com/ClayGirdner/nfl_hires_reddit_sentiment/master/vader_textblob_scatter.png)
-
-
-How does this look?
