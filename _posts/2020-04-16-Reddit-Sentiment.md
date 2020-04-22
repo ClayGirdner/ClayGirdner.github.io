@@ -2,6 +2,8 @@
 published: true
 title: 'Court of Public Opinion: A Sentiment Analysis'
 ---
+## Examining Reddit’s collective reaction to recent NFL head coaching hires
+
 Hand up, this time last year I thought Freddie Kitchens was a good hire for the Cleveland Browns. The strong offensive finish to 2018 combined with Freddie’s seemingly close ties to Baker Mayfield had me convinced that Kitchens was the man for the job. I wasn’t about to let the fact that Freddie lacked any head coaching experience come between me and my delusions of Browns grandeur. I was hooked on recency bias, and it was a hell of a drug.
 
 Fast forward to the present day. Freddie’s a goner, the Browns are once again riding the coaching carousel, and my hope-fueled dopamine high has long since faded. However, being so completely wrong left this armchair G.M.’s ego bruised and battered. I had to wonder if everyone bought into the hype or if I was among a gullible minority that fell for Freddie’s good ole boy schtick? To answer this question, I set out to measure the consensus fan opinion of the Kitchens pick and then compare it to that of Kevin Stefanski and other recent NFL head coach selections.
