@@ -11,4 +11,5 @@ I created this blog as a way to practice my writing/coding/visualizations while 
 
 ### Contact me
 
-[claygirdner@gmail.com](mailto:claygirdner@gmail.com)
+[claygirdner@gmail.com](mailto:claygirdner@gmail.com)  
+[github](https://github.com/ClayGirdner)
